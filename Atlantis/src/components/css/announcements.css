@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap');
+
+.announcements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 2vh;
+  background-color: #fafafa;
+  padding: 2rem 5rem;
+}
+
+.announcements-title {
+  font-family: 'Major Mono Display', monospace;
+  text-decoration: underline;
+}
+
+.one-announcement {
+  font-size: large;
+  font-family: 'Ibarra Real Nova', sans-serif;
+  border: 2px solid #ccc;
+  padding: 1rem;
+}
+
+.one-announcement:hover {
+  background-color: #ffffff;
+}
+
+.message {
+  font-size: large;
+  font-family: 'Ibarra Real Nova', sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.bold {
+  font-weight: bold;
+  font-family: 'Ibarra Real Nova', sans-serif;
+  display: inline;
+  white-space: pre-line;
+}

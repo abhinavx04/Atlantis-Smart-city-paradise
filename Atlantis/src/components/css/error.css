@@ -1,0 +1,15 @@
+.error {
+  height: 60vh;
+  text-align: center;
+  padding: 5rem 0 0 0;
+  background-color: #212529 !important;
+  border-top: 0.5px solid #ffffff;
+  border-bottom: 0.5px solid #ffffff;
+}
+
+.error-text {
+  font-family: 'Poiret One';
+  font-weight: 1000;
+  font-size: 2rem;
+  color: azure;
+}

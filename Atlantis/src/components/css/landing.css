@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+@keyframes shrink {
+  0% {
+    font-size: 18px;
+  }
+
+  100% {
+    font-size: 16px;
+  }
+}
+
+@keyframes grow-shrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+html, body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  position: absolute;
+}
+
+/* ######## LANDING.JS ############ */
+
+.flex-section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+#landing-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100%;
+  z-index: -1;
+}
+
+
+#left-section {
+  width: 50%;
+  min-height: 100vh;
+}
+
+
+.left-section-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+#right-section {
+  padding: 0;
+  margin-top: 0;
+  width: 50%;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.logo {
+  fill: #ffffff;
+}
+
+.center-logo {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 10rem;
+}
+
+.short-logo {
+  max-width: 70%;
+  margin: 0 15%;
+  transition: all 1s ease-in-out;
+}
+
+.short-logo:hover {
+  animation: grow-shrink 2.5s linear infinite;
+}
+
+.special-text {
+  display: block;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+#atlantis-header{
+  margin: 3rem 0 2rem 0;
+  font-size: 5.5rem;
+  font-family: 'Dancing Script';
+}
+
+#tag-line, #desc-line {
+  font-size: 1.5rem;
+  font-family: 'Major Mono Display';
+}
+
+#desc-line {
+  font-size: 1rem;
+}
+
+.show-button {
+  font-family: "major mono display";
+  padding: 0;
+  text-align: center;
+  width: 15rem;
+  height: 2.2rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  border: 3px solid #EDF5FC;
+  border-radius: 1rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#login-button {
+  margin-top: 8rem;
+  background-color: #4fbdba00;
+}
+
+#login-button:hover {
+  background-color: #4fbdba50;
+  animation: grow-shrink 1.5s linear infinite;
+}
+
+#register-button {
+  margin-top: 0;
+  position: relative;
+  bottom: 5px;
+  background-color: #d77fa100;
+}
+
+#register-button:hover {
+  animation: grow-shrink 1.5s linear infinite;
+  background-color: #d77fa150;
+}
+
+.login-signup-div {
+  color: #fff;
+  width: 15rem;
+  margin: 0.5rem 0;
+}
+
+#left-hr, #right-hr {
+  width: 6.5rem;
+  display: inline-block;
+  border: 0.02rem ridge #ffffff;
+}
+
+/* #################################### */
+
+/* ######## LOGIN/SIGNUP ############ */
+
+.short-logo-center {
+  display: flex;
+  justify-content: center;
+  fill: #000;
+  height: 7rem;
+  margin: 0 0 1rem 0;
+}
+
+#small-shortLogo {
+  height: 100%;
+}
+
+.adjust-login {
+  display: flex;
+  height: 100vh;
+  background-color: #EDF5FC;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: "Major Mono Display";
+}
+
+#login-component {
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.login-info {
+  font-size: 2rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.login-entries {
+  font-size: 1.4rem;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  width: 100%;
+  margin-top: 1.5rem;
+  height: 3.8rem;
+  border-radius: 3px;
+}
+
+.login-form {
+  margin: 0 auto;
+  width: 90%;
+  padding: 0.5rem;
+}
+
+.login-label {
+  font-size: 0.95rem;
+  padding: 0 0 0 0.5rem;
+  text-align: left;
+}
+
+.login-fields {
+  background: #EDF5FC;
+  color: #000;
+  border: none;
+  width: 90%;
+  height: 1.4rem;
+  font-size: 1.4rem;
+}
+
+.login-fields:focus {
+  outline: none;
+}
+
+.form-submit {
+  height: 2.5rem;
+  width: 8rem;
+  border-radius: 10px;
+  border: 3px solid #000000;
+  border-radius: 1rem;
+  margin-top: 1.5rem;
+  background-color: #EDF5FC;
+  transition: all 0.25s linear;
+}
+
+.form-submit:hover {
+  transform: scale(1.1);
+}
+
+.center-flex-logo {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1140px) {
+  #left-hr, #right-hr {
+    width: 6.5rem;
+  }
+}
+
+@media (max-width: 1006px) {
+  .short-logo {
+    max-width: 18rem;
+  }
+}
+
+@media (max-width: 810px) {
+  #right-section,
+  #left-section {
+    width: 100%;
+  }
+
+  #left-section {
+    padding: 0 0 5rem 0;
+  }
+
+  #right-section {
+    padding: 1rem 0 5rem 0;
+  }
+
+  .flex-section {
+    flex-direction: column;
+  }
+
+  .short-logo {
+    max-width: 22rem;
+  }
+}
+
+@media (max-width: 500px) { 
+  #left-section {
+    padding-left: 0;
+  }
+  .left-section-container {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .show-items {
+    align-items: center;
+    text-align: center;
+  }
+  .login-signup-div {
+    margin: 0.5rem auto;
+  }
+}

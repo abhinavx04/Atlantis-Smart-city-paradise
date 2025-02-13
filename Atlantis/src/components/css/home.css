@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap');
+
+
+.home {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.text {
+  width: 80%;
+  margin: 5vh auto;
+  font-family: 'Ibarra Real Nova', sans-serif;
+  font-size: 1.25rem;
+  background-color: #EDF5FC;
+}
+
+.images {
+  margin-right: 20px;
+  height: 500px;
+  float: right;
+  padding: 10px;
+}
+
+.page-details {
+  color: #EDF5FC;
+}
+
+.para-1 {
+  margin: 0;
+  height: 55vh;
+  justify-content: center;
+  background-image: url("../Images/home/bg1.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.para-2 {
+  margin: 0;
+  height: 95vh;
+  justify-content: center;
+  background-image: url("../Images/home/bg2.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.para-3 {
+  margin: 0;
+  height: 95vh;
+  justify-content: center;
+  background-image: url("../Images/home/bg3.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.para-text {
+  color: #0f0f0f;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+.para-title {
+  text-align: center;
+}
+
+#h-1 {
+  font-family: 'Dancing Script', cursive;
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+html, body{
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+a:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.navbar {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-family: 'Comfortaa', Sans-serif;
+  width: 100vw;
+}
+
+.navbar-logo-container {
+  width: 100%;
+  height: 100%;
+  /* background-color: #FFFFFF; */
+}
+
+.logo-navbar {
+  max-width: 5vw;
+  max-height: 10vh;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 0;
+}
+
+.navbar-heading-text {
+  margin-top: 1vh;
+}
+
+#header-name-static {
+  font-size: 2rem;
+  line-height: 1.65rem;
+  text-transform: none;
+  font-family: 'Dancing Script';
+}
+
+#header-tag {
+  font-size: 1.25rem;
+  font-family: 'Comfortaa', Sans-serif;
+}
+
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+
+
+@media (max-width: 920px) {
+  html, body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 530px) {
+  html, body {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  html, body {
+    font-size: 10px;
+  }
+}

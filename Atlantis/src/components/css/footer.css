@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Merriweather');
+
+html, body{
+  font-size: 16px;
+  text-align: justify;
+}
+
+footer{
+  background-color: #212529;
+  padding: 1rem 0 0 0;
+  color: rgba(236, 236, 236, 0.877);
+  text-align: center;
+  width: 100%;
+  padding-inline: 1.25%;
+  margin: 0 auto;
+}
+
+.contact-id {
+  font-family: 'Poiret One';
+  width: 50%;
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+
+.contact-number {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.logo-contact {
+  max-height: 2.5rem;
+}
+
+.gmail, .twitter, .insta {
+  max-height: 1.875rem;
+  filter: invert();
+}
+
+footer p {
+  margin: 2rem 0 0 0;
+}
+
+.git{
+  color: rgba(236, 236, 236, 0.877);
+  text-decoration: underline;
+}
+
+.git:hover {
+  color: rgba(255, 255, 255, 0.877);
+}
