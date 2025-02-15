@@ -1,0 +1,15 @@
+.login-button {
+  background: none;
+  border: none;
+  color: #0066cc;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+}
+
+.login-button:hover,
+.login-button:focus {
+  color: #004499;
+  text-decoration: none;
+}

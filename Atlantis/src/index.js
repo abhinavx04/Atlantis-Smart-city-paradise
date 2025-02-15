@@ -68,15 +68,21 @@ const admin_pages = [
 
 function renderPage() {
   if (user !== 'null' && user !== null) {
-    user = JSON.parse(user)
-    console.log(user);
-    if (user[0].fields.is_superuser) {
-    return [admin_pages, ...pages]
-    }
-    else {
+    try {
+      user = JSON.parse(user)
+      // Check if user array exists and has elements before accessing fields
+      if (Array.isArray(user) && user.length > 0 && user[0].fields) {
+        if (user[0].fields.is_superuser) {
+          return [...admin_pages, ...pages]
+        }
+      }
       return pages
+    } catch (error) {
+      console.error('Error parsing user data:', error)
+      return pages 
     }
   }
+  return pages
 }
 
 const page = (
